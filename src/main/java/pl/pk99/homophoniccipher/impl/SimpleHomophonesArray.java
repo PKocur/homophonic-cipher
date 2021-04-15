@@ -4,14 +4,14 @@ import pl.pk99.homophoniccipher.HomophonesArray;
 
 import java.util.Arrays;
 
-public class SimpleHomophonesArrayImpl implements HomophonesArray {
+public class SimpleHomophonesArray implements HomophonesArray {
 
     private final int[][] homophones;
 
     private final int numberOfLetters;
     private final int numberOfHomophones;
 
-    public SimpleHomophonesArrayImpl(int numberOfLetters, int numberOfHomophones) {
+    public SimpleHomophonesArray(int numberOfLetters, int numberOfHomophones) {
         this.numberOfLetters = numberOfLetters;
         this.numberOfHomophones = numberOfHomophones;
         this.homophones = new int[numberOfLetters][numberOfHomophones];

@@ -21,7 +21,7 @@ public class SimpleHomophonesArrayGeneratorImpl implements SimpleHomophonesArray
 
     @Override
     public HomophonesArray generate(int numberOfHomophones) {
-        HomophonesArray homophonesArray = new SimpleHomophonesArrayImpl(NUMBER_OF_ALPHABET_LETTERS, numberOfHomophones);
+        HomophonesArray homophonesArray = new SimpleHomophonesArray(NUMBER_OF_ALPHABET_LETTERS, numberOfHomophones);
         Set<Integer> uniqueNumbers = new HashSet<>();
         Random random = new Random();
         for (int i = 0; i < homophonesArray.getNumberOfLetters(); i++) {

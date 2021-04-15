@@ -5,11 +5,11 @@ import pl.pk99.homophoniccipher.HomophonicEncoder;
 
 import java.util.Random;
 
-public class SimpleHomophonicEncoderImpl implements HomophonicEncoder {
+public class SimpleHomophonicEncoder implements HomophonicEncoder {
 
     private final int FIRST_ALPHABET_LETTER_ASCII_POSITION;
 
-    public SimpleHomophonicEncoderImpl(int firstAlphabetLetterAsciiPosition) {
+    public SimpleHomophonicEncoder(int firstAlphabetLetterAsciiPosition) {
         FIRST_ALPHABET_LETTER_ASCII_POSITION = firstAlphabetLetterAsciiPosition;
     }
 

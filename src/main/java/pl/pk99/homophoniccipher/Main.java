@@ -2,7 +2,7 @@ package pl.pk99.homophoniccipher;
 
 import pl.pk99.homophoniccipher.impl.NDigitsHomophonicDecoder;
 import pl.pk99.homophoniccipher.impl.SimpleHomophonesArrayGeneratorImpl;
-import pl.pk99.homophoniccipher.impl.SimpleHomophonicEncoderImpl;
+import pl.pk99.homophoniccipher.impl.SimpleHomophonicEncoder;
 
 /**
  * Sample class showing sample library usage
@@ -25,7 +25,7 @@ public class Main {
         HomophonesArray homophonesArray = simpleHomophonesArrayGenerator.generate(HOMOPHONES_NUMBER);
 
         // Prepare simple encoder (which operates on ascii alphabet)
-        HomophonicEncoder homophonicEncoder = new SimpleHomophonicEncoderImpl(FIRST_ALPHABET_LETTER_ASCII_POSITION);
+        HomophonicEncoder homophonicEncoder = new SimpleHomophonicEncoder(FIRST_ALPHABET_LETTER_ASCII_POSITION);
 
         // Prepare 2 digits cipher decoder (digits number depends on the MIN and MAX homophone values)
         HomophonicDecoder homophonicDecoder = new NDigitsHomophonicDecoder(FIRST_ALPHABET_LETTER_ASCII_POSITION, NUMBER_OF_DIGITS_TO_ENCODE_LETTER);
